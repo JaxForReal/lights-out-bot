@@ -59,12 +59,16 @@ function generateMatrix(width, height, difficulty) {
 }
 
 function displayMatrix(game) {
-	string = "";
+	string = "\n  0 1 2 3 4";
 	for(i = 0; i < game.length; i++) {
+		string += "\n" + i + " ";
 		for(j = 0; j < game[0].length; j++) {
-			string +=  +game[i][j];
+			if(game[i][j]) {
+				string += "■ ";
+			}else {
+				string += "□ ";
+			}
 		}
-		string += "\n";
 	}
 	return string;
 }

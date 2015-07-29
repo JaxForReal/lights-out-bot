@@ -8,7 +8,9 @@ help.eval = function(data, chatConnection, commands, config) {
 		      commandList += config.trigger + key + ", ";
             }
         }
-	   chatConnection.sendMessage("$\\large \\color{#3399FF}{Lights\\ Out\\ game\\ bot}$\nMore info about Lights Out can be found here: https://en.wikipedia.org/wiki/Lights_Out_(game) \n(Use help <command name> to get info on a specific command)\nAll commands start with " + config.trigger + "\n\n" + commandList);
+	   chatConnection.sendMessage("$\\large \\color{#3399FF}{Lights\\ Out\\ game\\ bot}$By @Jax\nMore info about Lights Out can be found here: https://en.wikipedia.org/wiki/Lights_Out_(game) \n" + 
+	    "Source for this bot can be found on github: https://github.com/JaxForReal/lights-out-bot\n\n" +
+		"(Use help <command name> to get info on a specific command)\nAll commands start with " + config.trigger + "\n\n" + commandList);
         return;
 	}
 	if(commands[data.arguments[0]] != null) {
