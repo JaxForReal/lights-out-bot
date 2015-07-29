@@ -1,6 +1,6 @@
 {
 	"nickname": " LightsOut",
-	"channel": "lightsOut",
+	"channel": "botDev",
 	"trigger": ".",
 	"url": "wss://hack.chat/chat-ws"
 }
